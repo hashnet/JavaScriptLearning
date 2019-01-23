@@ -42,9 +42,9 @@
 
 function Inheritance() {
 }
-Inheritance.inherit = function(Parent, Child) {   //Static method to create the class hierarchy
-    // Parent = Parent Constructor = Parent();
+Inheritance.inherit = function(Child, Parent) {   //Static method to create the class hierarchy
     // Child = Child Constructor = Child();
+    // Parent = Parent Constructor = Parent();
     //
     // The simplest way to achieve above goal in one command is through below command:
     // Object.setPrototypeOf(Child.prototype, Parent.prototype);

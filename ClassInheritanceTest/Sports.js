@@ -9,17 +9,21 @@ var Sedan = require('./Sedan');
 
 //Class Sports extends Sedan {}
 function Sports(make, model, topSpeed) {
-    Sedan.call(this, make, model, false);       //super()
+    Sedan.call(this, make, model, false);       //super() -> Sedan(make, model, isAuto=true)
 
     this.topSpeed = topSpeed;
 
-    let _sound = 'swish!';                                                  //Overrides private feld of Car
     let _kmToMileRatio = 0.621371;
     this.getKmToMileRatio = function() {
         return _kmToMileRatio;
-    }  
+    }
+    
+    let _sound = 'swish!!!';                    //Overrides private feld of Car
+    this.getSound = function() {
+        return _sound;
+    }
 }
-Inheritance.inherit(Sedan, Sports);
+Inheritance.inherit(Sports, Sedan);             //class Sports extends Sedan {}
 Sports.prototype.getName = function() {                                 //Overriding parent class method
     return 'RC ' + this.make + this.model;
 }

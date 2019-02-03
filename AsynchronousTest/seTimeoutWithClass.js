@@ -21,5 +21,6 @@ console.log("Get ready for hellos...");
 setTimeout(function(){najat.sayHello();}, 1500);
 setTimeout(() => {namir.sayHello();}, 1000);
 
+//sending arguments to the callback function
 setTimeout(function(words){najat.speak(words);}, 2500, "hi");
 setTimeout((words) => {namir.speak(words);}, 2000, "hey");

@@ -11,11 +11,11 @@
 // ║       'Parent']       ║     .prototype     *  of type 'Parent']    *
 // ║                       ║<───────────────────*                       *
 // ╚═══════════════════════╝                    *************************
-//        ↑
+//                ↑
 // 		  │
 // 		  │ .__proto__
 // 		  │ [above property is private.
-//        │  so use below instead]
+//                │  so use below instead]
 // 		  │ Object.getPrototypeOf(object)
 // 		  │
 // ╔═══════════════════════╗                    *************************
@@ -26,11 +26,11 @@
 // ║       'Parent']       ║     .prototype     *  of type 'Child']     *
 // ║                       ║<───────────────────*                       *
 // ╚═══════════════════════╝                    *************************
-//        ↑ 											│
+//                ↑ 											│
 // 		  │                                             │
 // 		  │ .__proto__                                  │
 // 		  │ [above property is private.                 │ new Child()
-//        │  so use below instead]                      │
+//                │  so use below instead]                      │
 // 		  │ Object.getPrototypeOf(object)               │
 // 		  │                                             ↓
 // 		┌─────────────────────────────────────────────────┐
@@ -38,7 +38,7 @@
 // 		│               instance of Child                 │
 // 		│            [created by new Child()]             │
 // 		│                                                 │
-//      └─────────────────────────────────────────────────┘ 
+//              └─────────────────────────────────────────────────┘ 
 
 function Inheritance() {
 }
